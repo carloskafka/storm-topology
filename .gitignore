@@ -1,23 +1,24 @@
-# Compiled class file
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+*.properties
 
 # Package Files #
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
+src/main/java/storm/example
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Twitter Related Conf
+sample_tweet.json
+src/main/resources/twitter4j.properties
+
+#ignore Intellij files
+.idea/
+target/
+*.iml
+*.ipr
+*.iws
+
+environment/.vagrant
+*.swp
+environment/kafkadata
+environment/apache-storm-0.9.2-incubating
