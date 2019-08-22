@@ -5,13 +5,13 @@ import org.apache.kafka.common.serialization.Serializer;
 
 import java.util.Map;
 
-public class CustomSerializer implements Serializer<JoinExample.Customer> {
+public class CustomSerializer implements Serializer<Customer> {
     @Override
     public void configure(Map<String, ?> configs, boolean isKey) {
     }
 
     @Override
-    public byte[] serialize(String topic, JoinExample.Customer data) {
+    public byte[] serialize(String topic, Customer data) {
         byte[] retVal = null;
         ObjectMapper objectMapper = new ObjectMapper();
         try {
